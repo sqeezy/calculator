@@ -27,7 +27,7 @@ jobs:
 
   - task: UseNode@1
     inputs:
-      version: ${{ matrix.node-version }}
+      version: ${{ node-version }}
 
   - script: |
       npm ci
