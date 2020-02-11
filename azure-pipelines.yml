@@ -27,7 +27,7 @@ jobs:
 
   - task: UseNode@1
     inputs:
-      version: ${{ node-version }}
+      version: $(node-version)
 
   - script: |
       npm ci
